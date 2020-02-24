@@ -1,0 +1,107 @@
+&MICRO_M2005
+douse_reffc = .true.
+dopredictNc  = .true.
+ccnconst = 100.
+/
+
+&SGS_TKE
+dosmagor = .false.
+/
+
+&PARAMETERS
+
+ caseid ='10m',
+
+ nrestart = 0,
+
+ perturb_type = 5, 
+
+ LES = .true.,
+ OCEAN = .true.,
+
+ ug = -10.,
+ vg = 0., 
+
+ dosgs		= .true.,
+ dodamping 	= .true.,
+ doscalar       = .false.,
+ doupperbound  	= .true.,
+ docloud 	= .true.,
+ doprecip 	= .false., 
+ dolongwave	= .false.,
+ doshortwave	= .false.,
+ dosurface 	= .true.,
+ dolargescale 	= .true.,
+ doradforcing   = .false.,
+ dosfcforcing   = .true.,
+ docoriolis 	= .false.,
+ donudging_uv   = .false.,
+ donudging_tq   = .false.,
+ doentrainment  = .false.,
+ dotracers      = .false.,
+ 
+ tauls = 43200.,
+
+ SFC_FLX_FXD    = .true.,
+ SFC_TAU_FXD    = .true.,
+
+ fcor = 0.376e-4,
+
+ dx = 	10.,
+ dy = 	10.,
+
+ dt = 	1.,
+ 
+ nrad = 15,
+ longitude0 = 0.,
+ latitude0 = 18.,
+ doseasons = .false.,
+ doisccp = .false.,
+ domodis = .false.,
+ domisr = .false.,
+
+ day0=0.,
+
+nstop 	= 21600,
+nprint 	= 120,
+nstat 	= 900,
+nstatfrq= 30,
+
+doSAMconditionals = .true.
+dosatupdnconditionals = .true.
+
+
+ nsave2D	= 60,
+ nsave2Dstart	= 0,
+ nsave2Dend	= 21600,
+ save2Dbin      = .false.
+
+ nsave3D	= 1,
+ nsave3Dstart	= 18000,
+ nsave3Dend	= 18300,
+ save3Dbin      = .true.
+
+ nsave3D        = 1,
+ nsave3Dstart   = 19000,
+ nsave3Dend     = 19300,
+ save3Dbin      = .true.
+
+ nsave3D        = 1,
+ nsave3Dstart   = 20000,
+ nsave3Dend     = 20300,
+ save3Dbin      = .true.
+
+ nent3D         = 900,
+ nent3Dstart    = 0,
+ nent3Dend      = 21600,
+ ent3Dbin       = .true.
+
+ nstatmom       = 900,
+ nstatmomstart  = 0,
+ nstatmomend    = 21600,
+ savemombin = .false.
+
+/ 
+
+
+
